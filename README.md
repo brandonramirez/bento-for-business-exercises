@@ -42,3 +42,21 @@ largest file first, but that can be easily adjusted.
 5. We don't need to handle symbolic links.
 6. If the specified directory does not exist or is not a directory, a friendly
 error message is acceptable.
+
+## Exercise 2
+
+The `Encode` program can be run from the command line.
+
+    $ java -cp build/libs/bento-for-business-exercises.jar com.brandonsramirez.bentoforbusiness.Encode caat
+    ca2t
+    $
+
+### Assumptions
+
+I had to make some minor assumptions on this exercise due to the weekend.
+
+1. Since the instructions limited the input to English a-z, no validation is
+performed or special handling of other inputs.  Input containing integers would
+create a risk because the output would be ambiguous
+  - Example: does `a3` mean 3 `a`'s or an `a` and a `3`?)
+  - Example: does `a32` mean 32 `a`'s or an `a` plus 2 `3`'s
